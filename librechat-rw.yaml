@@ -4,12 +4,12 @@ cache: true
 
 mcpSettings:
   allowedDomains:
-    - "seo-data-api-mcp-server.railway.internal"
+    - "seo-data-api-mcp-server-production-b92c.up.railway.app"
 
 mcpServers:
   se-ranking:
     type: streamable-http
-    url: "http://seo-data-api-mcp-server.railway.internal:8080/mcp"
+    url: "https://seo-data-api-mcp-server-production-b92c.up.railway.app/mcp"
     title: "SE Ranking"
     description: "SEO data, keyword rankings, competitor analysis, and site audits"
     timeout: 30000
