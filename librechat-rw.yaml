@@ -5,6 +5,7 @@ cache: true
 mcpSettings:
   allowedDomains:
     - "seo-data-api-mcp-server-production-b92c.up.railway.app"
+    - "gamma-mcp-gateway-production.up.railway.app"
 
 mcpServers:
   se-ranking:
@@ -14,4 +15,13 @@ mcpServers:
     description: "SEO data, keyword rankings, competitor analysis, and site audits"
     timeout: 30000
     initTimeout: 15000
+    serverInstructions: true
+
+  gamma:
+    type: streamable-http
+    url: "https://gamma-mcp-gateway-production.up.railway.app/mcp"
+    title: "Gamma"
+    description: "AI-generated presentations and client proposals"
+    timeout: 120000
+    initTimeout: 30000
     serverInstructions: true
